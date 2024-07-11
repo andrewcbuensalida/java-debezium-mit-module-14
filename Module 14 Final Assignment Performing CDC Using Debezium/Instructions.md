@@ -72,6 +72,10 @@ From the /tmp folder, run the code below to allow Debezium to start monitoring c
 `mvn spring-boot:run`
 
 Provide a screenshot to show that your application ran correctly. In your Terminal window, you should see FirstName=John as the first entry.
+
+This errors with:
+`Unable to initialize and start connector's task class 'io.debezium.connector.mysql.MySqlConnectorTask' with config:... `
+
 Now, to test the CDC, open the mysqlmasterdb CLI and connect to the database using the following command:
 mysql -h localhost -u root -pMyNewPass employeedb
 
