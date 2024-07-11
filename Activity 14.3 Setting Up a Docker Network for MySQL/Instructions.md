@@ -2,7 +2,7 @@ To complete this activity, follow these steps:
 
 To create the network for this module, run the following Docker command from the PowerShell. Provide a screenshot to show that you successfully ran the command.
 
-docker network create myCDCNetwork
+`docker network create myCDCNetwork`
 
 Create a folder called Activity14_3. Open VS Code, and then open the new Activity14_3 folder. Provide a screenshot to show that you successfully opened the folder in VS Code.
 
@@ -42,13 +42,13 @@ Make sure that you don’t have any containers running in Docker. Provide a scre
 
 Create a MySQL Docker image and instruct Docker to run the customer.sql file to initialize the database. Open a PowerShell, navigate to the Activity14_3 folder, and run the following command to create a MySQL Docker image:
 
-docker build -t mysqlactivity14_3 .
+`docker build -t mysqlactivity14_3 .`
 
 Provide a screenshot to show that you successfully executed the command.
 
 Create a MySQL Docker container and associate it to the myCDCNetwork. Run the following command from a PowerShell in the Activity14_3 folder:
 
-docker run --rm --name mysqlserver -p 3307:3306 --network myCDCNetwork -d mysqlactivity14_3
+`docker run --rm --name mysqlserver -p 3307:3306 --network myCDCNetwork -d mysqlactivity14_3`
 
 Provide a screenshot to show that you successfully executed the command.
 
